@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Breast-cancer prediction</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version) -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            background-color: #DEDEDE ;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Navbar customizations */
+        .navbar {
+            background-color: white;
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: black;
+        }
+        .navbar .nav-link:hover {
+            color: #00ff00;
+        }
+
+        /* Fullscreen carousel */
+        .carousel-inner img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+        }
+
+        /* Product section customizations */
+        .product-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            gap: 20px;
+            background-color: #fff;
+        }
+        .product-image-container {
+            flex: 1;
+            text-align: center;
+            max-height: 500px;
+        }
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product-details {
+            flex: 2;
+            padding: 20px;
+        }
+        .product-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .product-table th,
+        .product-table td {
+            vertical-align: middle;
+            padding: 10px;
+        }
+        /* Full screen product section */
+        .product-container {
+            width: 100%;
+        }
+        .btn{
+            background-color:#DEDEDE ;
+        }
+        .btn:hover
+        {
+            color:red;
+            background-color:white;
+        } 
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="static/TVS-Motor-Logo.png" height="70" width="70"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Discount</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Query Management</a>
+                    </li>
+
+
+                    
+
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                   
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/login">Login</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <br><br>
+    <div class="btn">
+        <a href="/product">
+        <button type="button" class="btn btn-light">SCOOTERS</button></a>
+        <a href="/bike">
+        <button type="button" class="btn btn-light" >MOTORCYCLES</button>
+        </a>
+        <a href="/mop">
+        <button type="button" class="btn btn-light">MOPEDS</button></a>
+        <a href="/elctric">
+        <button type="button" class="btn btn-light">ELECTRIC</button></a>
+        <a href="three">
+        <button type="button" class="btn btn-light">THREE WHEELERS</button></a>
+    </div>
+  
+
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="static/css/img/auto.jpg" alt="Apache RTR 310" class="product-img" height="150px">
+                <div class="card-body">
+                    <h2 class="product-title">Apache RTR 310</h2>
+                    <div class="discount-info" style="text-align: center; margin-top: 20px;">
+                        
+                        <span class="discounted-price" style="color: green; font-size: 24px; font-weight: bold; display: block; margin-top: 10px;">₹250,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="static/css/img/auto.jpg" alt="Apache RTR 310" class="product-img" height="150px">
+                <div class="card-body">
+                    <h2 class="product-title">Apache RTR 310</h2>
+                    <div class="discount-info" style="text-align: center; margin-top: 20px;">
+                        
+                        <span class="discounted-price" style="color: green; font-size: 24px; font-weight: bold; display: block; margin-top: 10px;">₹250,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="static/css/img/auto.jpg" alt="Apache RTR 310" class="product-img" height="150px">
+                <div class="card-body">
+                    <h2 class="product-title">Apache RTR 310</h2>
+                    <div class="discount-info" style="text-align: center; margin-top: 20px;">
+                        
+                        <span class="discounted-price" style="color: green; font-size: 24px; font-weight: bold; display: block; margin-top: 10px;">₹250,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        
+    </div>
+    
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
